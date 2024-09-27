@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Red Hat Display";
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+main {
+  max-width: 450px;
+  width: 80%;
+}
+
+.container {
+  background-color: white;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.hero-image {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 18px 18px 0 0;
+}
+
+.text-wrapper {
+  max-width: 300px;
+  text-align: center;
+}
+
+.text-wrapper h2 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-wrapper {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 22px;
+  border-radius: 10px;
+  width: 76%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.annual-plan-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.annual-plan {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.annual-plan-section img {
+  margin-right: 18px;
+}
+
+.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.change:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 60%;
+}
+
+.payment-button {
+  width: 76%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.payment-button:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.cancel-button {
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.change,
+.plan-wrapper,
+.payment-button,
+.cancel-button,
+.text-wrapper p {
+  transition: 0.15s;
+}
+
+@media (max-width: 580px) {
+  .text-wrapper p {
+    font-size: 18px;
+  }
+  .plan-wrapper,
+  .payment-button {
+    width: 84%;
+  }
+}
